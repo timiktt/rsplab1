@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="pn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.theardpanelfx.MainCont">
+   <children>
+      <Pane layoutX="600.0" layoutY="-1.0" prefHeight="403.0" prefWidth="146.0" style="-fx-background-color: f0b1b1;">
+         <children>
+            <Label layoutX="14.0" layoutY="42.0" prefHeight="17.0" prefWidth="117.0" text="Cчет игрока:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="points" layoutX="14.0" layoutY="72.0" prefHeight="17.0" prefWidth="117.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="cn" layoutX="14.0" layoutY="142.0" prefHeight="17.0" prefWidth="117.0" text="0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="112.0" prefHeight="17.0" prefWidth="117.0" text="Выстрелов:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="-2.0" layoutY="-3.0" prefHeight="406.0" prefWidth="83.0" style="-fx-background-color: b712e0;">
+         <children>
+            <Polygon fill="DODGERBLUE" layoutX="19.0" layoutY="218.0" points="-19.0, 24.0, 64.0, -15.0, -19.0, -54.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </Pane>
+      <Line endX="-100.5" endY="-243.0" layoutX="473.0" layoutY="243.0" startX="-100.5" startY="157.0" strokeWidth="3.0" />
+      <Line endX="-100.5" endY="-243.0" layoutX="607.0" layoutY="245.0" startX="-100.5" startY="157.0" strokeWidth="3.0" />
+      <Circle fx:id="c1" fill="DODGERBLUE" layoutX="371.0" layoutY="202.0" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="c2" fill="DODGERBLUE" layoutX="505.0" layoutY="202.0" radius="25.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fx:id="gun" fill="#ee0707" layoutX="141.0" layoutY="210.0" points="-25.0, 2.0, -1.0, -9.0, -25.0, -18.0, -60.0, -9.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button layoutX="20.0" layoutY="419.0" mnemonicParsing="false" onAction="#runCircle" prefHeight="25.0" prefWidth="73.0" text="Старт" />
+      <Button layoutX="104.0" layoutY="419.0" mnemonicParsing="false" onAction="#onShot" prefHeight="25.0" prefWidth="73.0" text="Выстрел" />
+      <Button layoutX="193.0" layoutY="419.0" mnemonicParsing="false" onAction="#stopGame" prefHeight="25.0" prefWidth="133.0" text="Остановить игру" />
+   </children>
+</Pane>
